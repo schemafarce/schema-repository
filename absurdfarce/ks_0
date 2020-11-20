@@ -1,0 +1,165 @@
+{
+    "keyspace": {
+        "name": "ks_0",
+        "replication": {
+            "class": "SimpleStrategy",
+            "replication_factor": "1"
+        },
+        "oracle_replication": {
+            "class": "SimpleStrategy",
+            "replication_factor": "1"
+        }
+    },
+    "tables": [
+        {
+            "name": "tbl_0",
+            "partition_keys": [
+                {
+                    "name": "pk_0",
+                    "type": "text"
+                }
+            ],
+            "clustering_keys": [
+                {
+                    "name": "ck_0",
+                    "type": "timeuuid"
+                }
+            ],
+            "columns": [
+                {
+                    "name": "col_0",
+                    "type": "boolean"
+                },
+                {
+                    "name": "col_1",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "col_2",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "col_3",
+                    "type": "text"
+                }
+            ],
+            "indexes": []
+        },
+        {
+            "name": "tbl_1",
+            "partition_keys": [
+                {
+                    "name": "pk_0",
+                    "type": "text"
+                },
+                {
+                    "name": "pk_1",
+                    "type": "timeuuid"
+                }
+            ],
+            "clustering_keys": [
+                {
+                    "name": "ck_1",
+                    "type": "timestamp"
+                }
+            ],
+            "columns": [
+                {
+                    "name": "col_4",
+                    "type": "text"
+                }
+            ],
+            "indexes": []
+        },
+        {
+            "name": "tbl_2",
+            "partition_keys": [
+                {
+                    "name": "pk_0",
+                    "type": "text"
+                },
+                {
+                    "name": "pk_1",
+                    "type": "timeuuid"
+                }
+            ],
+            "clustering_keys": [
+                {
+                    "name": "ck_1",
+                    "type": "timestamp"
+                }
+            ],
+            "columns": [
+                {
+                    "name": "col_5",
+                    "type": "double"
+                },
+                {
+                    "name": "col_6",
+                    "type": "text"
+                }
+            ],
+            "indexes": []
+        },
+        {
+            "name": "tbl_3",
+            "partition_keys": [
+                {
+                    "name": "pk_0",
+                    "type": "text"
+                },
+                {
+                    "name": "pk_1",
+                    "type": "timeuuid"
+                }
+            ],
+            "clustering_keys": [
+                {
+                    "name": "ck_1",
+                    "type": "timestamp"
+                }
+            ],
+            "columns": [
+                {
+                    "name": "col_7",
+                    "type": "double"
+                },
+                {
+                    "name": "col_8",
+                    "type": "text"
+                }
+            ],
+            "indexes": []
+        },
+        {
+            "name": "tbl_4",
+            "partition_keys": [
+                {
+                    "name": "pk_0",
+                    "type": "text"
+                },
+                {
+                    "name": "pk_1",
+                    "type": "timeuuid"
+                }
+            ],
+            "clustering_keys": [
+                {
+                    "name": "ck_1",
+                    "type": "timestamp"
+                }
+            ],
+            "columns": [
+                {
+                    "name": "col_9",
+                    "type": "double"
+                },
+                {
+                    "name": "col_10",
+                    "type": "text"
+                }
+            ],
+            "indexes": []
+        }
+    ]
+}
